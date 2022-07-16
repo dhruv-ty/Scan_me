@@ -1,0 +1,158 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App {
+  background-color: #3c424d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.main {
+  width: 25%;
+  height: 90%;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.main .input {
+  width: 70%;
+  padding: 8px 25px;
+  border: 3px solid #9e9e9e;
+  outline: none;
+  margin: 15px 0;
+}
+
+.main .input:focus {
+  border: 3px solid rgb(23, 175, 226);
+}
+.btn,
+.input {
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+.main .btn {
+  width: 80%;
+  padding: 12px 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: rgb(23, 175, 226);
+  color: #fff;
+  transition: 0.3s;
+}
+.main .code {
+  margin: 20px 0;
+}
+
+.main .btn:hover {
+  box-shadow: 0 10px 25px -10px rgb(23, 175, 226);
+  cursor: pointer;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#btne{
+  width: 20%;
+  height: 35px;
+  padding: 7px 0;
+  outline: none;
+  border: none;
+  position: relative;
+  left: 130px;
+  bottom: 20px;
+  border-radius: 15px;
+  background: rgb(23, 175, 226);
+  color: #fff;
+  transition: 0.3s;
+}
+
+#btne:hover{
+  box-shadow: 0 10px 25px -10px rgb(23, 175, 226);
+  cursor: pointer;  
+}
+
+#toast {
+  position: relative;
+  bottom: 10px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background: rgb(23, 175, 226);
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 10px 25px -10px rgb(23, 175, 226);
+  transition: 0.3s;
+  font-size: 15px;
+}
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60px;
+}
+
+#btne:hover{
+  animation: options 2s linear infinite;
+}
+@keyframes options{
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+img{
+  width: 150px;
+  height: 150px;
+}
